@@ -1,4 +1,5 @@
-# Task - 01 : Implement linear regression to predict housing prices based on features like square footage, number of bedrooms, and location. Use a dataset like the Boston Housing dataset for training and evaluation.
+"""Task - 01 : Implement linear regression to predict housing prices based on features like square footage, 
+number of bedrooms, and location. Use a dataset like the Boston Housing dataset for training and evaluation."""
 
 #1. Importing Necessary Libraries
 
