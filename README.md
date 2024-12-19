@@ -6,57 +6,95 @@
 **Domain**: Machine Learning<br>
 **Duration**: DECEMBER 5th, 2024 to JANUARY 20th, 2025<br>
 
-## Overview of project
-### Topic: Housing Price Prediction using Linear Regression
-This project implements a linear regression model to predict housing prices using the Boston Housing Dataset. It leverages features like square footage, number of rooms, pollution levels, and socio-economic factors to estimate the median value of owner-occupied homes.
-
-The project includes data preprocessing, exploratory data analysis (EDA), model training, and evaluation to demonstrate the application of machine learning in real-world scenarios.
----
-### Dataset
-The dataset used is the Boston Housing Dataset, which contains:<br>
-
-**Features**: 13 variables representing socio-economic, environmental, and structural characteristics.<br>
-**Target Variable**: medv (Median value of owner-occupied homes in $1000s).<br>
----
-### **Workflow**
-1. **Import Libraries**:
-   Load necessary Python libraries such as `pandas`, `sklearn`, and `matplotlib`.
-2. **Data Loading**:
-   Load the dataset into a `pandas` DataFrame.
-3. **Data Cleaning**:
-   - Handle missing values by imputing with the column mean.
-   - Identify and remove outliers if required.
-4. **Exploratory Data Analysis**:
-   - Generate a **correlation heatmap** to understand relationships between variables.
-   - Visualize the distribution of the target variable (`medv`).
-5. **Data Splitting**:
-   Divide the dataset into **training (80%)** and **testing (20%)** subsets.
-6. **Model Training**:
-   - Train a linear regression model on the training data.
-   - Use features like `rm` (number of rooms) and `lstat` (lower status population).
-7. **Evaluation**:
-   - Calculate performance metrics such as:
-     - **Mean Absolute Error (MAE)**.
-     - **R² Score**.
-   - Plot actual vs. predicted values to visualize the model's performance.
+## Project Overview
+This project focuses on predicting housing prices using the Boston Housing Dataset by implementing a linear regression model. The aim is to explore the relationship between socio-economic, environmental, and structural factors with housing prices and build an effective predictive model.
 
 ---
 
-### **Key Features**
-- **Correlation Heatmap**: Visualizes the relationships between variables to identify influential predictors.
-- **Model Performance Metrics**: Evaluate predictions using MAE and R² Score.
-- **Data Visualization**: Includes target variable distribution and prediction scatterplots.
+## Dataset
+
+### Boston Housing Dataset
+- **Features**: 13 variables including socio-economic, environmental, and structural characteristics.
+- **Target Variable**: `medv` (Median value of owner-occupied homes in $1000s).
 
 ---
 
-### **Requirements**
-The following Python libraries are required:
-- `pandas`
-- `numpy`
-- `matplotlib`
-- `seaborn`
-- `scikit-learn`
+## Workflow
 
+### 1. Importing Libraries
+The following Python libraries are used in this project:
+- `pandas`: For data manipulation and analysis.
+- `numpy`: For numerical computations.
+- `matplotlib` and `seaborn`: For data visualization.
+- `scikit-learn`: For machine learning implementation.
+
+### 2. Data Loading
+The dataset is loaded into a `pandas` DataFrame for preprocessing and analysis.
+
+### 3. Data Cleaning
+- **Missing Values**: Imputed with the column mean.
+- **Outlier Detection**: Outliers are identified and removed as necessary to improve model accuracy.
+
+### 4. Exploratory Data Analysis (EDA)
+- **Correlation Heatmap**: Used to visualize the relationships between variables and identify important predictors.
+- **Distribution Analysis**: The target variable (`medv`) is visualized to understand its spread and skewness.
+
+### 5. Data Splitting
+The dataset is divided into two subsets:
+- **Training Set (80%)**: Used to train the linear regression model.
+- **Testing Set (20%)**: Used to evaluate model performance.
+
+### 6. Model Training
+- A linear regression model is trained using features such as `rm` (number of rooms) and `lstat` (lower status population).
+
+### 7. Evaluation
+- **Performance Metrics**:
+  - Mean Absolute Error (MAE)
+  - R² Score
+- **Visualization**:
+  - Scatterplot of actual vs. predicted values to assess prediction accuracy.
+
+---
+
+## Key Features
+- **Correlation Heatmap**: Identifies significant predictors of housing prices.
+- **Evaluation Metrics**: Quantifies model performance using MAE and R².
+- **Data Visualization**: Includes a variety of visualizations to understand data and results.
+
+---
+
+## Setup Instructions
+
+### Prerequisites
+Ensure you have the following installed:
+- Python 3.x
+- The following Python libraries:
+  - `pandas`
+  - `numpy`
+  - `matplotlib`
+  - `seaborn`
+  - `scikit-learn`
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/housing-price-prediction.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd housing-price-prediction
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Run the Project
+1. Open the Jupyter Notebook:
+   ```bash
+   jupyter notebook
+   ```
+2. Run the notebook file `Task_01.ipynb` step by step.
 ---
 ### Result
 ![image](https://github.com/user-attachments/assets/59a33c94-6fd6-40b7-8a17-afdad54178f2)
